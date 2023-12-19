@@ -87,7 +87,7 @@
                     @foreach ($dcIcons as $item)
                         <li class=" ms-3 ">
                             <a href="#" class="icon-wrapper">
-                                <img :src="{{$item['picture']}}" :alt="{{$item['info']}}">
+                                <img src="{{$item['picture']}}" alt="{{$item['info']}}">
                             </a>
                         </li>
                     @endforeach

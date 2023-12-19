@@ -58,3 +58,44 @@ a {
 img {
     width: 100%;
 }
+
+// footer
+
+.top-footer-wrapper {
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    transform: scale(1,1.2);
+}
+.footer-links {
+    font-size: 0.8rem;
+}
+
+.bg-logo-wrapper {
+    right: 180px;
+    bottom: -80px;
+}
+
+.btn-outline-primary {
+    --bs-btn-border-color: var(--light-blue);
+}
+
+.btn {
+    border-radius: none !important;
+    border: 2px solid var(--light-blue) !important;
+}
+
+.font-my-light-blue {
+    color: var(--light-blue);
+}
+
+.icon-wrapper {
+    width: 20px;
+    height: 20px;
+}
