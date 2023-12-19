@@ -11,3 +11,50 @@ $fa-font-path: "../webfonts" !default;
 @import '~bootstrap/scss/bootstrap';
 
 
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --light: #ffffff;
+    --light-blue: #0282f9;
+    --dark: #1c1c1c;
+    --light-grey: #797979;
+    --dark-grey: #303030;
+}
+
+.bg-my-white {
+    background-color: var(--light);
+}
+
+.bg-my-dark {
+    background-color: var(--dark);
+}
+
+.bg-my-light-blue {
+    background-color: var(--light-blue);
+}
+
+.bg-my-dark-grey {
+    background-color: var(--dark-grey);
+}
+
+.font-my-light {
+    color: var(--light);
+}
+
+.font-my-grey {
+    color: var(--light-grey);
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
