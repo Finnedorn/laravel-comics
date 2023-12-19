@@ -179,6 +179,33 @@ return [
         'FANS',
         'NEWS',
         'SHOP'
+    ],
+    "merchArr" => [
+        [
+            "picture"=> "/img/buy-comics-digital-comics.png",
+            "info"=> "buy-comics-digital-comics",
+            "title"=> "DIGITAL COMICS"
+        ],
+        [
+            "picture"=> "/img/buy-comics-merchandise.png",
+            "info"=> "buy-comics-merchandise",
+            "title"=> "DC MERCHANDISE"
+        ],
+        [
+            "picture"=> "/img/buy-comics-subscriptions.png",
+            "info"=>"buy-comics-subscriptions",
+            "title"=> "SUBSCRIPTION"
+        ],
+        [
+            "picture"=> "/img/buy-comics-shop-locator.png",
+            "info"=>"buy-comics-shop-locator",
+            "title"=>"COMICS SHOP LOCATOR"
+        ],
+        [
+            "picture"=> "/img/buy-dc-power-visa.svg",
+            "info"=> "buy-dc-power-visa",
+            "title"=> "DC POWER VISA"
+        ]
     ]
 
 ];
