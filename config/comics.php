@@ -167,6 +167,18 @@ return [
         "picture" => "/img/footer-youtube.png",
         "info" => "footer-youtube.png"
     ]
+    ],
+    "navArr" => [
+        'CHARACTERS',
+        'COMICS',
+        'MOVIES',
+        'TV',
+        'GAMES',
+        'COLLECTIBLES',
+        'VIDEOS',
+        'FANS',
+        'NEWS',
+        'SHOP'
     ]
 
 ];

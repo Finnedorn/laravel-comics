@@ -59,6 +59,59 @@ img {
     width: 100%;
 }
 
+//header
+
+.nav-font {
+    font-size: 0.7rem;
+    font-weight: bolder;
+    transform: scale(1,1.2);
+}
+
+//main
+
+.top-main {
+    height: 420px;
+    background-image: url(../../public/img/jumbotron.jpg);
+    background-size: cover;
+}
+
+.title-wrapper {
+    background-color: var(--light-blue);
+    top: 395px;
+    left: 185px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    transform: scale(1,1.2);
+}
+.img-wrapper {
+    width: 50px;
+    height: 50px;
+}
+
+ul>li:first-child>a>div {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+ul>li:nth-child(4)>a>div {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.card-wrapper {
+    width: 180px;
+    height: 250px;
+}
+.img-card-wrapper {
+    height: 200px;
+    overflow: hidden;
+}
+
 // footer
 
 .top-footer-wrapper {
