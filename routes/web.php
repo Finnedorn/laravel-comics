@@ -21,3 +21,13 @@ Route::get('/comics', function () {
     $comics = config('comics.comics');
     return view('/comics.index', compact('comics'));
 })->name('comics.index');
+
+Route::get('/comics/{$id}', function ($id) {
+    $comics = config('comics.comics');
+    if($id >= 0 && $id < count($comics)) {
+        $comic = $comics[$id];
+        return view('comics.show', compact('comic'));
+    } else {
+        abort(404);
+    }
+})->name('comics.show');

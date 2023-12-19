@@ -2,7 +2,7 @@
 
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Comics')
 
 @php
   $dcMerch = config("comics.merchArr");
@@ -21,10 +21,10 @@
             {{-- comics card --}}
             <div class="container py-5">
                 <div class="d-flex flex-wrap align-items-center justify-content-center py-3 ">
-                    @foreach ($comics as $comic)
+                    @foreach ($comics as $key=>$comic)
                         <div class="ms-4 pb-4">
                             <div class="card-wrapper">
-                                <a href="#">
+                                <a href="{{route('comics.show', $key)}}">
                                     <div class="img-card-wrapper">
                                         <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                                     </div>
