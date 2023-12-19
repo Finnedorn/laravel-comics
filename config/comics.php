@@ -112,7 +112,6 @@ return [
         "type" => "graphic novel",
     ]
     ],
-
     "dcComicsArr"=> [
         'Characters',
         'Comics',

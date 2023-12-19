@@ -22,7 +22,7 @@ Route::get('/comics', function () {
     return view('/comics.index', compact('comics'));
 })->name('comics.index');
 
-Route::get('/comics/{$id}', function ($id) {
+Route::get('/comics/{id}', function ($id) {
     $comics = config('comics.comics');
     if($id >= 0 && $id < count($comics)) {
         $comic = $comics[$id];
