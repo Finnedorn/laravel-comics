@@ -5,7 +5,7 @@
     <div class="container d-flex justify-content-between py-3">
       <!--logo-->
       <div class="logo-wrapper">
-        <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="dc-logo">
+        <a href="{{route('home')}}"><img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="dc-logo"></a>
       </div>
       <!--navbar-->
       <nav class="navbar navbar-expand-lg">
