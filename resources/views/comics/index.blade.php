@@ -7,6 +7,7 @@
 @php
   $dcMerch = config("comics.merchArr");
 @endphp
+
 @section('content')
     <main class="position-relative">
         {{-- jumbotron --}}
@@ -20,23 +21,42 @@
         <section class="bg-my-dark">
             {{-- comics card --}}
             <div class="container py-5">
+                {{-- adesso che cambiato le route e ho tralsto tutti i dati di config>comics>comics in db_comics --}}
+                {{-- non ho piu un array associativo importato da un file locale bensì da un db --}}
+                {{-- pertanto dovrò sostituire i collegamenti da $comic['thumb']  a $comic->thumb --}}
                 <div class="d-flex flex-wrap align-items-center justify-content-center py-3 ">
-                    @foreach ($comics as $key=>$comic)
+                    {{-- se prima per muovermi verso la pagina di show necessitavo di usare la key dell'array --}}
+                    {{-- quindi @foreach ($comics as $key=>comic) --}}
+                    {{-- e nella route href avevo $key --}}
+                    {{-- adesso faccio riferimento all'id nel db a cui sono collegato --}}
+                    {{-- quindi @foreach ($comics as $comic) --}}
+                    {{-- e nella route href: $comic->id --}}
+                    @foreach ($comics as $comic)
                         <div class="ms-4 pb-4">
                             <div class="card-wrapper">
-                                <a href="{{route('comics.show', $key)}}">
+                                <a href="{{route('comics.show', $comic->id)}}">
                                     <div class="img-card-wrapper">
-                                        <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                                        <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
                                     </div>
                                 </a>
                                 <div>
                                     <p class="font-my-light text-center pt-3">
-                                        {{$comic['series']}}
+                                        {{$comic->series}}
                                     </p>
                                 </div>
                             </div>
                         </div>
                     @endforeach
+                </div>
+                <div class="text-center">
+                    <h3 class=" text-light pb-3">
+                        Non trovi il tuo comic?
+                    </h3>
+                    <a href="{{route('comics.create')}}">
+                        <button class="btn btn-primary rounded-0">
+                            Aggiungilo
+                        </button>
+                    </a>
                 </div>
             </div>
             {{-- merchandise --}}

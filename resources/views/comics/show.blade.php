@@ -12,19 +12,19 @@
             <div class="title-wrapper p-2 py-4">
             </div>
             <div class="img-comic-wrapper position-absolute">
-                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                <img src="{{ $comic->thumb }}" alt="{{ $comic->title}}">
             </div>
         </div>
         <div class="container">
             <div class="row py-5 my-3">
                 <div class="col-8">
                     <h2>
-                        {{ $comic['title'] }}
+                        {{ $comic->title }}
                     </h2>
                     <div class="bg-success p-4 d-flex justify-content-between">
                         <div class="d-flex justify-content-between w-75">
                             <div class="text-light">
-                                U.S Price: {{ $comic['price'] }}
+                                U.S Price: {{ $comic->price }}
                             </div>
                             <div class="text-light">
                                 AVAILABLE
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <p class="py-4">
-                        {{ $comic['description'] }}
+                        {{ $comic->description }}
                     </p>
                 </div>
                 <div class="col-4">
@@ -70,13 +70,13 @@
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    Series: {{ $comic['series'] }}
+                                    Series: {{ $comic->series }}
                                 </li>
                                 <li class="list-group-item">
-                                    U.S Price: {{$comic['price']}}
+                                    U.S Price: {{$comic->price}}
                                 </li>
                                 <li class="list-group-item">
-                                    On Sale Date: {{$comic['sale_date']}}
+                                    On Sale Date: {{$comic->sale_date}}
                                 </li>
                             </ul>
                         </div>
